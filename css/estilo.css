@@ -1,0 +1,213 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --cor-amarelomedio:#87702B;
+    --cor-amarelo:#EDB934;
+    --cor-verde:#455127;
+    --cor-verde-light:#D2DBA2;
+    --cor-branca:#FFFFFF;
+    --cor-amarelo-light:#FDEBAD;
+    --cor-verde-amarelado:#B1B141;
+    --cor-amarelo-escuro:#1C1C0F;
+    --cor-marrom:#594721;
+    --cor-verde-escuro:#1A281E;
+    --fonte: 'Roboto', arial, sans-serif;
+}
+
+body{
+    font-family:var(--fonte);
+    font-size: 16px;
+    color:var(--cor-amarelo-escuro);
+}
+img{
+    max-width:100%;
+    height: auto;
+}
+.container{
+    max-width:1140px;
+    width:95%;
+    margin: 0 auto;
+}
+.topo{
+    background-image: url('imagens/FUNDO.png');
+    background-repeat:no-repeat;
+    background-size:  100%;
+    background-position: top;
+}
+.chamada{
+    display:flex;
+    margin-top: 25px;
+    justify-content:center;
+}
+
+.chamada-texto{
+    text-align: center;
+}
+.chamada h2{
+    font-family: Roboto serif;
+    font-size: 62px;
+    text-align: center;
+    font-weight: 400;
+    color:var(--cor-branca);
+}
+
+.chamada h3{
+    font-size: 42px;
+    text-align: center;
+    font-weight: bold;
+    color:var(--cor-branca);
+
+}
+
+.chamada span{
+    color: var(--cor-amarelo-light);
+}
+.logo{
+    background-image: url('imagens/LOGO.png');
+    background-repeat:no-repeat;
+    width:209px;
+    height:165px;
+    text-indent:-10000px;
+}
+.topo-menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content:center;
+}
+
+.navegacao{
+    width:90%;
+    justify-content:space-around;
+    flex-direction: column;
+    gap:20px;
+}
+.navegacao menu{
+    list-style:none;
+    display:flex;
+    padding:15px;
+    align-items: center;
+    justify-content:center;
+}
+.navegacao a{
+    color:var(--cor-branca);
+    font-weight: bold;
+    font-size:32px;
+    text-transform:uppercase;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.navegacao .atual{
+    border-bottom: 3px solid var(--cor-amarelo-light);
+}
+
+.navegacao a:hover{
+    border-bottom: 3px solid var(--cor-amarelo-light);
+}
+
+.portfolio{
+    background-color: var(--cor-verde-escuro);
+    border-top:15px solid var(--cor-amarelo-escuro);
+    height: 420px;
+}
+
+.portfolio-itens{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.modelo{
+    height: 200px;
+    margin-left: 15px;
+    border-radius: 10px;
+    border-color: var(--cor-amarelo-light);
+    border-width:7px;
+}
+
+.container h3{
+    color:var(--cor-branca);
+    font-weight: bold;
+}
+
+.container p{
+    color: var(--cor-verde-light);
+    font-weight: 500;
+}
+
+.sobre-nos{
+    background-color: var(--cor-verde-amarelado);
+    background-size: 900px;
+    border-top:15px solid var(--cor-verde);
+}
+
+.sobre-nos h3{
+    color: var(--cor-verde-escuro);
+    border-bottom: 2px solid var(--cor-verde);
+    width: 103px;
+    padding:15px;
+}
+
+.historia{
+    display: flex;
+    align-items: center;
+}
+
+.historia p{
+    color: var(--cor-verde-escuro);
+    margin-top: 20px;
+}
+.historia img{
+    width: 40px;
+    border-radius: 100%;
+    border-color:#B1B141;
+    border-width:5px;
+    border-style:outset;
+
+}
+
+.contato {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: var(--cor-amarelo-escuro);
+    border-top:15px solid var(--cor-marrom);
+}
+
+
+.contato h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--cor-amarelo);
+    font-weight: 500;
+}
+
+
+.contato h4{
+    max-width: 600px;
+    margin: 0 auto 20px;
+    color:var(--cor-branca);
+    font-weight: 500;
+}
+
+.btn-verde {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--cor-amarelomedio);
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.linha{
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);
+    width: 700px; 
+    margin-left: auto;
+    margin-right: auto;
+}
